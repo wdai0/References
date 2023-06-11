@@ -5,7 +5,7 @@ output:
     variant: gfm
     
 bibliography: 'bibs/NeuralNetworks.bib'
-csl: 'csls/ieee-with-url.csl'
+csl: 'csls/ieee.csl'
 nocite: '@*'
 ---
 
