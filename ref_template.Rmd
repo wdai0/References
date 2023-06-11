@@ -1,0 +1,42 @@
+---
+title: "references template"
+output: markdown_document
+  variant: gfm
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r message=FALSE, warning=FALSE}
+library(RefManageR)
+library(here)
+library(tidyverse)
+
+# Read .bib file
+bib_obj <- ReadBib(here("bibs", "myreferences.bib"), check = FALSE)
+
+# Create data frame
+refs <- data.frame(
+  Author = sapply(bib_obj, function(x) paste(x$author, collapse = ", ")),
+  Title = sapply(bib_obj, function(x) x$title),
+  Year = sapply(bib_obj, function(x) x$year),
+  DOI = sapply(bib_obj, function(x) x$doi),
+  annotation = sapply(bib_obj, function(x) x$annotation)
+)
+
+# Truncate long titles and add hyperlink to titles if DOI is not missing
+refs$Title <- ifelse(!is.na(refs$DOI),
+                     ifelse(nchar(refs$Title) > 100,
+                            paste0(substr(refs$Title, 1, 100), "...", sprintf(' [(link)](https://doi.org/%s)', refs$DOI)),
+                            paste0(refs$Title, sprintf(' [(link)](https://doi.org/%s)', refs$DOI))),
+                     ifelse(nchar(refs$Title) > 100,
+                            paste0(substr(refs$Title, 1, 100), "..."),
+                            refs$Title))
+
+# Select necessary columns and create markdown table
+refs |> 
+  select(Title, Author, Year) %>%
+  knitr::kable(format = "pipe", escape = FALSE, align = 'l')
+```

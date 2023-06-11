@@ -1,0 +1,12 @@
+---
+title: "References on neural networks"
+output: 
+  md_document:
+    variant: gfm
+    
+bibliography: 'bibs/NeuralNetworks.bib'
+csl: 'csls/ieee-with-url.csl'
+nocite: '@*'
+---
+
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
