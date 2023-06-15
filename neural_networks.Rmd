@@ -9,4 +9,16 @@ csl: 'csls/ieee.csl'
 nocite: '@*'
 ---
 
-date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+**Date:** "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+
+Useful links and references about universal approximation theory:
+
+1. [Understanding deep learning]( https://udlbook.github.io/udlbook/)(draft).
+
+2. [Matus Telgarsky’s notes](https://mjt.cs.illinois.edu/dlt/two.pdf)
+
+3. [M. Telgarsky, Benefits of depth in neural networks](http://proceedings.mlr.press/v49/telgarsky16.pdf) 
+
+4. [Z. Lu, H. Pu, F. Wang, Z. Hu, and L. Wang. The expressive power of neural networks: A view from the width.](https://proceedings.neurips.cc/paper_files/paper/2017/file/32cbf687880eb1674a07bf717761dd3a-Paper.pdf) also, @luExpressivePowerNeural.
+
+5. [G. Cybenko, Approximation by superpositions of a sigmoidal function.](https://link.springer.com/article/10.1007/bf02551274), @cybenkoApproximationSuperpositionsSigmoidal1989
