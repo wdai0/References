@@ -201,7 +201,11 @@ and there would often be additional steps such as padding (to handle sentences o
 
 <img src="pics/positional_encoding.png" width="1000">
 
+> where $pos$ is the position and $i$ is the dimension.
+> 
 > Attention is all you need (Vaswani et al. 2017)
+
+
 
 > - Without positional encoding, 
 a transformer model can lose information about the sequence of words.
