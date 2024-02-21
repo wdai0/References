@@ -35,7 +35,7 @@ jobs:
         working-directory: fairness-ml
 
       - name: Build
-        run: npm run build -- --base /fairness-ml/
+        run: npm run build -- --base /References/
         working-directory: fairness-ml
 
       - uses: actions/configure-pages@v4
