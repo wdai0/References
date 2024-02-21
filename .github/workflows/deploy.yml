@@ -30,21 +30,11 @@ jobs:
         run: npm install
         working-directory: fairness-ml
 
-      - name: Install Slidev theme
-        run: npm install slidev-theme-academic
-        working-directory: fairness-ml
-
       - name: Build
         run: npm run build -- --base /fairness-ml/
         working-directory: fairness-ml
 
       - uses: actions/configure-pages@v4
-
-      - name: List build output
-        run: |
-            ls -alh fairness-ml
-            ls -alh fairness-ml/dist
-
 
       - uses: actions/upload-pages-artifact@v3
         with:
