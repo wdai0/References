@@ -36,6 +36,12 @@ jobs:
 
       - uses: actions/configure-pages@v4
 
+      - name: Check dist directory
+        run: |
+            pwd
+            ls -alh
+            ls -alh fairness-ml/dist
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ github.workspace }}/fairness-ml/dist
