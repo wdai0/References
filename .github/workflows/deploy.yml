@@ -31,20 +31,14 @@ jobs:
         working-directory: fairness-ml
 
       - name: Build
-        run: npm run build -- --base /References/fairness-ml/
+        run: npm run build -- --base /fairness-ml/
         working-directory: fairness-ml
 
       - uses: actions/configure-pages@v4
 
-      - name: Check dist directory
-        run: |
-            pwd
-            ls -alh
-            find . -type d -name "fairness-ml"
-
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ github.workspace }}/fairness-ml/dist
+          path: fairness-ml/dist
 
       - name: Deploy
         id: deployment
