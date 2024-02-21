@@ -36,6 +36,12 @@ jobs:
 
       - uses: actions/configure-pages@v4
 
+      - name: List build output
+        run: |
+            ls -alh fairness-ml
+            ls -alh fairness-ml/dist
+
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: fairness-ml/dist
