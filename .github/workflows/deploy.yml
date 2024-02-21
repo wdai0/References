@@ -40,7 +40,7 @@ jobs:
         run: |
             pwd
             ls -alh
-            ls -alh fairness-ml/dist
+            find . -type d -name "fairness-ml"
 
       - uses: actions/upload-pages-artifact@v3
         with:
