@@ -2,6 +2,36 @@
 
 [^1]: [slidev](https://github.com/slidevjs/slidev)
 
+Getting started:
+
+* Init a repository
+
+```zsh
+npm init slidev@latest
+```
+
+* Open and more
+
+```zsh
+npx slidev
+```
+
+* Export
+
+```zsh
+npm i -D playwright-chromium
+npx slidev export
+npx slidev export --format md
+```
+
+* Static hosting
+
+Refer to [GitHub pages hosting](https://sli.dev/guide/hosting).
+
+* Customized files
+
+Use `gmu_styles.css`, `cover.md` for layout and aesthetics. Config `.github/workflow/deploy.yml`.
+
 ## Understanding the Workflow Configuration
 
 1. **Environment Section**:

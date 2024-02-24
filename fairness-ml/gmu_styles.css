@@ -1,0 +1,22 @@
+.slidev-layout {
+    position: relative;
+  }
+  
+  .slidev-layout::before,
+  .slidev-layout::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px; /* Adjust the width as needed */
+    background-color: rgb(226, 168, 43);
+  }
+  
+  .slidev-layout::before {
+    left: 0;
+  }
+  
+  .slidev-layout::after {
+    right: 0;
+  }
+  

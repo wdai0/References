@@ -15,6 +15,9 @@ drawings:
   syncAll: true
 ---
 
+<!-- gmu style layout start -->
+<style src="gmu_styles.css"></style>
+
 <style>
 h2 {
     background-color: rgb(30, 98, 56); /* Custom background color */
@@ -26,6 +29,9 @@ h2 {
   }
 </style>
 
+<!-- gmu style layout end -->
+
+<!-- change p text -->
 <div style="text-align: center;">
 
   <h1 style="font-size: 3em; margin-bottom: 0.25em;">Fairness in machine learning</h1>
