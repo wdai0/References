@@ -36,11 +36,11 @@ h2 {
 
   <h1 style="font-size: 3em; margin-bottom: 0.25em;">Fairness in machine learning</h1>
   
-  <p style="font-size: 2em; margin-top: 0; color: #CCCCCC;">IEEE</p>
+  <p style="font-size: 2em; margin-top: 0; color: #CCCCCC;"> </p>
   
-  <p style="font-size: 1.5em; margin-bottom: 0.5em; margin-top: 0.5em;">WD Mobile</p>
+  <p style="font-size: 1.5em; margin-bottom: 0.5em; margin-top: 0.5em;">wdai</p>
 
-  <p style="font-size: 1em; margin-top: 0;">Clayton Uni</p>
+  <p style="font-size: 1em; margin-top: 0;">George Mason University</p>
   
   <p style="font-size: 1em; margin-top: 0.5em;">2024-02</p>
 

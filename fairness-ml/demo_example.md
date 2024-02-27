@@ -437,3 +437,36 @@ class: text-center
 # Learn More
 
 [Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+
+---
+
+## Some code demo
+
+```r
+a <- rnorm(100, 0, 10)
+```
+
+Some text here.
+
+```python{1|2}{lines:true}
+import numpy as np
+import pandas as pd
+```
+
+---
+
+```yaml
+layout: two-cols
+```
+
+## Demo left
+
+Some text
+
+::right::
+
+## Demo right
+
+$$
+e^{\pi i} + 1 = 0.
+$$
