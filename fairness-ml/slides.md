@@ -49,7 +49,7 @@ Essentially, it means that the model's predictions should be equally accurate fo
 
 ## Example: Loan Approval Prediction
 
-Suppose we want to train a DL model to predict whether individuals should be approved for a load.
+Suppose we want to train a DL model to predict whether individuals should be approved for a loan.
 The **protected** variable ($a$) here is **gender** and outcome ($y$) is whether the individual would repay the loan if given (yes = 1, no =0).
 
 The goal is to ensure the model's predictions $\hat{y}$ **do not** depend on gender when they have the **same true label** for loan repayment.
